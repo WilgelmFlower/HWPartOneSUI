@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  HWPartOneSUI
-//
-//  Created by Mark Wilhelm on 26.08.2022.
-//
-
 import SwiftUI
 
 struct ContentView: View {
