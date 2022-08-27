@@ -3,7 +3,6 @@ import SwiftUI
 struct MiniPlayer: View {
     var body: some View {
         VStack {
-            
             HStack(spacing: 15) {
                 Image("hurts")
                     .resizable()
@@ -26,12 +25,18 @@ struct MiniPlayer: View {
                     Image(systemName: "forward.fill")
                         .font(.title2)
                         .foregroundColor(.primary)
-            })
-        }
+                })
+            }
             .padding(.horizontal)
-    }
+        }
         .frame(height: 80)
-        .background(BlurView())
+        .background(BlurViewPlayer())
         .offset(y: 333)
+    }
 }
+
+struct MiniPlayer_Previews: PreviewProvider {
+    static var previews: some View {
+        MiniPlayer()
+    }
 }

@@ -6,7 +6,7 @@ struct MainScreenText: View {
             Text("Ищете свою музыку?")
                 .font(.title)
                 .bold()
-
+            
             Text("Здесь появится купленная Вами в Itunes Store музыка.")
                 .lineLimit(2)
                 .multilineTextAlignment(.center)

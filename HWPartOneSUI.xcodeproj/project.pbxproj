@@ -15,8 +15,11 @@
 		ED7D620028B8CFAB00C06B5C /* MainScreenText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D61FF28B8CFAB00C06B5C /* MainScreenText.swift */; };
 		ED7D620228B8D0D000C06B5C /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620128B8D0D000C06B5C /* RadioView.swift */; };
 		ED7D620428B8D0FF00C06B5C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620328B8D0FF00C06B5C /* SearchView.swift */; };
-		ED7D620628B8D3EA00C06B5C /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620528B8D3EA00C06B5C /* BlurView.swift */; };
+		ED7D620628B8D3EA00C06B5C /* BlurViewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620528B8D3EA00C06B5C /* BlurViewPlayer.swift */; };
 		ED7D620828B8DCD600C06B5C /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */; };
+		EDA8270C28BA1C0D00BFF4DB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270B28BA1C0D00BFF4DB /* CellModel.swift */; };
+		EDA8270E28BA1D8500BFF4DB /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270D28BA1D8500BFF4DB /* EditCell.swift */; };
+		EDA8271028BA206900BFF4DB /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270F28BA206900BFF4DB /* MainScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +32,11 @@
 		ED7D61FF28B8CFAB00C06B5C /* MainScreenText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenText.swift; sourceTree = "<group>"; };
 		ED7D620128B8D0D000C06B5C /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 		ED7D620328B8D0FF00C06B5C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		ED7D620528B8D3EA00C06B5C /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		ED7D620528B8D3EA00C06B5C /* BlurViewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewPlayer.swift; sourceTree = "<group>"; };
 		ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		EDA8270B28BA1C0D00BFF4DB /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		EDA8270D28BA1D8500BFF4DB /* EditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCell.swift; sourceTree = "<group>"; };
+		EDA8270F28BA206900BFF4DB /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +71,6 @@
 			children = (
 				ED7D61FD28B8CB8500C06B5C /* App */,
 				ED7D61FE28B8CB8E00C06B5C /* View */,
-				ED70FA9028B8BD3E00E72E8E /* Assets.xcassets */,
 				ED70FA9228B8BD3E00E72E8E /* Preview Content */,
 			);
 			path = HWPartOneSUI;
@@ -74,6 +79,7 @@
 		ED70FA9228B8BD3E00E72E8E /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				EDA8271128BA261500BFF4DB /* SupportingFIles */,
 				ED70FA9328B8BD3E00E72E8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -90,15 +96,34 @@
 		ED7D61FE28B8CB8E00C06B5C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED7D620528B8D3EA00C06B5C /* BlurViewPlayer.swift */,
 				ED70FA8E28B8BD3D00E72E8E /* ContentView.swift */,
+				EDA8270D28BA1D8500BFF4DB /* EditCell.swift */,
 				ED7D61FB28B8BF7E00C06B5C /* LibraryView.swift */,
-				ED7D620528B8D3EA00C06B5C /* BlurView.swift */,
-				ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */,
-				ED7D620328B8D0FF00C06B5C /* SearchView.swift */,
-				ED7D620128B8D0D000C06B5C /* RadioView.swift */,
 				ED7D61FF28B8CFAB00C06B5C /* MainScreenText.swift */,
+				EDA8270F28BA206900BFF4DB /* MainScreenView.swift */,
+				ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */,
+				ED7D620128B8D0D000C06B5C /* RadioView.swift */,
+				ED7D620328B8D0FF00C06B5C /* SearchView.swift */,
+				EDA8270A28BA1BFF00BFF4DB /* Model */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EDA8270A28BA1BFF00BFF4DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDA8270B28BA1C0D00BFF4DB /* CellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDA8271128BA261500BFF4DB /* SupportingFIles */ = {
+			isa = PBXGroup;
+			children = (
+				ED70FA9028B8BD3E00E72E8E /* Assets.xcassets */,
+			);
+			path = SupportingFIles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +198,12 @@
 			files = (
 				ED70FA8F28B8BD3D00E72E8E /* ContentView.swift in Sources */,
 				ED7D620028B8CFAB00C06B5C /* MainScreenText.swift in Sources */,
-				ED7D620628B8D3EA00C06B5C /* BlurView.swift in Sources */,
+				ED7D620628B8D3EA00C06B5C /* BlurViewPlayer.swift in Sources */,
+				EDA8270E28BA1D8500BFF4DB /* EditCell.swift in Sources */,
+				EDA8270C28BA1C0D00BFF4DB /* CellModel.swift in Sources */,
 				ED7D61FC28B8BF7E00C06B5C /* LibraryView.swift in Sources */,
 				ED70FA8D28B8BD3D00E72E8E /* HWPartOneSUIApp.swift in Sources */,
+				EDA8271028BA206900BFF4DB /* MainScreenView.swift in Sources */,
 				ED7D620828B8DCD600C06B5C /* MiniPlayer.swift in Sources */,
 				ED7D620428B8D0FF00C06B5C /* SearchView.swift in Sources */,
 				ED7D620228B8D0D000C06B5C /* RadioView.swift in Sources */,
