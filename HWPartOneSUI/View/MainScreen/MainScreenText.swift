@@ -13,6 +13,7 @@ struct MainScreenText: View {
                 .foregroundColor(.secondary)
                 .font(.system(size: 20))
         }
+        .padding(.horizontal)
     }
 }
 

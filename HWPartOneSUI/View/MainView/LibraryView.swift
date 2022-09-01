@@ -2,14 +2,12 @@ import SwiftUI
 
 struct LibraryView: View {
     
-    @State private var isButtonToggle = true
-    
     init() {
         UITabBar.appearance().backgroundColor = UIColor.systemGray5
     }
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             TabView {
                 MainScreenView()
                     .tabItem {
@@ -29,6 +27,7 @@ struct LibraryView: View {
             }
             .accentColor(Color.red)
             MiniPlayer()
+                .offset(y: -49)
         }
     }
 }

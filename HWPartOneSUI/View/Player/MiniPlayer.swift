@@ -31,7 +31,6 @@ struct MiniPlayer: View {
         }
         .frame(height: 80)
         .background(BlurViewPlayer())
-        .offset(y: 333)
     }
 }
 
