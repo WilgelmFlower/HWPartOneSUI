@@ -4,16 +4,17 @@ struct RadioView: View {
     
     let rows = [GridItem(.fixed(200))]
     
-    let columns = [GridItem(.flexible())]
-    
     var body: some View {
         NavigationView {
             ScrollView {
+                
                 Divider()
                     .frame(width: 380)
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHGrid(rows: rows, spacing: 10) {
                         ForEach(modelRadio) { data in
+                            
                             VStack(alignment: .leading) {
                                 Text(data.typeRadio)
                                     .foregroundColor(.secondary)
@@ -33,31 +34,14 @@ struct RadioView: View {
                         }
                     }
                 }
+                
                 Divider()
                     .frame(width: 400)
-                LazyVGrid(columns: columns,alignment: .leading, spacing: 20) {
-                    Text("Cтанции")
-                        .font(.system(size: 20))
-                        .bold()
-                        .padding()
-                    ForEach(modelRadioStation) { data in
-                        HStack {
-                            data.image
-                                .resizable()
-                                .frame(width: 80, height: 80)
-                            VStack(alignment: .leading) {
-                                Text(data.nameRadio)
-                                Text(data.typeRadioStation)
-                                    .foregroundColor(.secondary)
-                                Divider()
-                                    .frame(width: 300)
-                            }
-                        }
-                    }
-                    .padding(.leading)
-                }
+                
+              RadioViewVerticalStack()
             }
             .navigationTitle("Радио")
+            .padding(.horizontal)
         }
     }
     

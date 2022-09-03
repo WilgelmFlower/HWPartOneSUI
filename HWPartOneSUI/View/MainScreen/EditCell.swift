@@ -17,7 +17,7 @@ struct EditCell: View {
                 }
                 .onMove(perform: move)
             }
-            .environment(\.editMode, .constant(EditMode.active))
+            .environment(\.editMode, .constant(.active))
             .navigationBarBackButtonHidden(true)
         }
     }

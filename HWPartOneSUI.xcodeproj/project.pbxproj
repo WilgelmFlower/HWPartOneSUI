@@ -17,6 +17,7 @@
 		ED7D620428B8D0FF00C06B5C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620328B8D0FF00C06B5C /* SearchView.swift */; };
 		ED7D620628B8D3EA00C06B5C /* BlurViewPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620528B8D3EA00C06B5C /* BlurViewPlayer.swift */; };
 		ED7D620828B8DCD600C06B5C /* MiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */; };
+		ED8D882B28C350030039D968 /* RadioViewVerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D882A28C350030039D968 /* RadioViewVerticalStack.swift */; };
 		EDA8270C28BA1C0D00BFF4DB /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270B28BA1C0D00BFF4DB /* CellModel.swift */; };
 		EDA8270E28BA1D8500BFF4DB /* EditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270D28BA1D8500BFF4DB /* EditCell.swift */; };
 		EDA8271028BA206900BFF4DB /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA8270F28BA206900BFF4DB /* MainScreenView.swift */; };
@@ -35,6 +36,7 @@
 		ED7D620328B8D0FF00C06B5C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		ED7D620528B8D3EA00C06B5C /* BlurViewPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurViewPlayer.swift; sourceTree = "<group>"; };
 		ED7D620728B8DCD600C06B5C /* MiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayer.swift; sourceTree = "<group>"; };
+		ED8D882A28C350030039D968 /* RadioViewVerticalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewVerticalStack.swift; sourceTree = "<group>"; };
 		EDA8270B28BA1C0D00BFF4DB /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		EDA8270D28BA1D8500BFF4DB /* EditCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCell.swift; sourceTree = "<group>"; };
 		EDA8270F28BA206900BFF4DB /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				ED7D620128B8D0D000C06B5C /* RadioView.swift */,
+				ED8D882A28C350030039D968 /* RadioViewVerticalStack.swift */,
 			);
 			path = Radio;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				ED70FA8F28B8BD3D00E72E8E /* ContentView.swift in Sources */,
 				ED7D620028B8CFAB00C06B5C /* MainScreenText.swift in Sources */,
 				ED7D620628B8D3EA00C06B5C /* BlurViewPlayer.swift in Sources */,
+				ED8D882B28C350030039D968 /* RadioViewVerticalStack.swift in Sources */,
 				EDA8270E28BA1D8500BFF4DB /* EditCell.swift in Sources */,
 				EDA8270C28BA1C0D00BFF4DB /* CellModel.swift in Sources */,
 				ED7D61FC28B8BF7E00C06B5C /* LibraryView.swift in Sources */,
