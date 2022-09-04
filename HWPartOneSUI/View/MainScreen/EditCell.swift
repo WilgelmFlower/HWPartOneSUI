@@ -16,6 +16,7 @@ struct EditCell: View {
                     }
                 }
                 .onMove(perform: move)
+                .listRowBackground(Color.white)
             }
             .environment(\.editMode, .constant(.active))
             .navigationBarBackButtonHidden(true)
