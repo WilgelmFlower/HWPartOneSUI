@@ -38,7 +38,7 @@ struct RadioView: View {
                 Divider()
                     .frame(width: 400)
                 
-              RadioViewVerticalStack()
+                RadioViewVerticalStack()
             }
             .navigationTitle("Радио")
             .padding(.horizontal)

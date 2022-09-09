@@ -15,6 +15,12 @@ struct ListRadioStation: Identifiable {
     var typeRadioStation: String
 }
 
+struct SearchModel: Identifiable {
+    var id = UUID()
+    var image: Image
+    var description: String
+}
+
 var modelRadio: [ListRadio] = [
     ListRadio(image: Image("basta"), typeRadio: "Новый выпуск", genreRadio: "Музыкальный базар с Бастой", infoRadio: "Новое шоу."),
     ListRadio(image: Image("top100"), typeRadio: "Избранная радиостанция", genreRadio: "Топ чартов Америки", infoRadio: "То, что слушают прямо сейчас."),
@@ -35,3 +41,13 @@ var modelRadioStation: [ListRadioStation] = [
     ListRadioStation(image: Image("hiphop"), nameRadio: "Хип-хоп", typeRadioStation: "Идеальные биты и рифмы.")
 ]
 
+var modelSearch: [SearchModel] = [
+    SearchModel(image: Image("search1"), description: "Рок"),
+    SearchModel(image: Image("search2"), description: "Альтернатива"),
+    SearchModel(image: Image("search3"), description: "Поп"),
+    SearchModel(image: Image("search4"), description: "Метал"),
+    SearchModel(image: Image("search5"), description: "Рэп"),
+    SearchModel(image: Image("search6"), description: "Электро"),
+    SearchModel(image: Image("search7"), description: "Кантри"),
+    SearchModel(image: Image("search8"), description: "Диско")
+]
