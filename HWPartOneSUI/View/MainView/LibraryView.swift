@@ -19,7 +19,7 @@ struct LibraryView: View {
                         Image(systemName: "dot.radiowaves.left.and.right")
                         Text("Радио")
                     }
-                SearchView()
+                UiKitSearchView()
                     .tabItem {
                         Image(systemName: "magnifyingglass")
                         Text("Поиск")

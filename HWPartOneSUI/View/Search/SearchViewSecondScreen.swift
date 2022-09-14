@@ -32,6 +32,7 @@ struct SearchViewSecondScreen: View {
                         .padding(.leading)
                     }
                 }
+ 
             }
             
             Divider()

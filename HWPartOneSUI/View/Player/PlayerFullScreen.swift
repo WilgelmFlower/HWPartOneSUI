@@ -13,39 +13,47 @@ struct PlayerFullScreen: View {
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 300, height: 300)
                     .cornerRadius(20)
-                    .offset(y: -160)
-                
-                HStack {
+                    .padding(.horizontal)
+                    
+
+                ZStack {
                     VStack(alignment: .leading) {
                         Text("Nothing Will Be Bigger")
                             .font(.system(size: 20, design: .rounded))
                             .frame(width: 200)
-                            .offset(x: 100)
+                            
                         Text("Hurts")
-                            .offset(x: 100)
                         
-                        Slider(value: $value, in: 0...60)
-                            .offset(x: 90)
-                            .frame(width: 400)
-                        Text("0:00")
-                            .offset(x: 100, y: -10)
-                        Text("-4:12")
-                            .offset(x: 450, y: -30)
+                        Slider(value: $value, in: 0...4.12, step: 0.01)
+                            .frame(width: 350)
+                            .padding(.trailing, 50)
                     }
+                    .padding(.leading, 50)
+                    
+        
+                    HStack {
+                        Text(String(format: "%.2f", value))
+                            Spacer()
+                        Text(String(format: "%.2f", (value) - 4.12))
+                    }
+                    .padding(.top, 110)
+                    .padding(.horizontal, 50)
+                    
                     
                     Spacer()
                         .frame(width: 150)
-                    
+                        
                     Button(action: {}) {
                         Image(systemName: "ellipsis.circle")
                             .frame(width: 35, height: 35)
                             .font(.title)
                             .foregroundColor(.primary)
-                            .offset(x: -100, y: -40)
+                            .padding(.leading, 290)
                     }
                 }
-                .offset(y: -100)
+                .padding(.bottom, 300)
             }
+            .padding(.top, 150)
             
             HStack(spacing: 50) {
                 Button(action: {}) {
@@ -64,15 +72,18 @@ struct PlayerFullScreen: View {
             .font(.system(size: 50))
             .offset(y: 185)
             
-            HStack {
+            VStack(alignment: .center, spacing: 60) {
+                
+            HStack(alignment: .center) {
                 Image(systemName: "speaker.fill")
-                    .offset(y: 300)
+        
                 Slider(value: $valueSecond, in: 0...100)
-                    .offset(y: 300)
-                    .frame(width: 350)
+                    .frame(width: 280)
+                
                 Image(systemName: "speaker.wave.3.fill")
-                    .offset(y: 300)
             }
+            .padding(.vertical)
+            .padding(.top, 650)
             
             HStack(spacing: 70) {
                 Button(action: {}) {
@@ -89,7 +100,9 @@ struct PlayerFullScreen: View {
                 }
             }
             .font(.system(size: 30))
-            .offset(y: 380)
+            .padding(.horizontal)
+            
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.red.opacity(0.4))

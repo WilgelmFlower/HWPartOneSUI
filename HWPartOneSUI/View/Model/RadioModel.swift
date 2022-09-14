@@ -17,9 +17,25 @@ struct ListRadioStation: Identifiable {
 
 struct SearchModel: Identifiable {
     var id = UUID()
-    var image: Image
+    var image: UIImage?
     var description: String
 }
+
+struct SearchHorizontalStackModel: Identifiable {
+    var id = UUID()
+    var image: Image
+}
+
+var searchStack: [SearchHorizontalStackModel] = [
+    SearchHorizontalStackModel(image: Image("hs1")),
+    SearchHorizontalStackModel(image: Image("hs2")),
+    SearchHorizontalStackModel(image: Image("hs3")),
+    SearchHorizontalStackModel(image: Image("hs4")),
+    SearchHorizontalStackModel(image: Image("hs5")),
+    SearchHorizontalStackModel(image: Image("hs6")),
+    SearchHorizontalStackModel(image: Image("hs7")),
+    SearchHorizontalStackModel(image: Image("hs8"))
+]
 
 var modelRadio: [ListRadio] = [
     ListRadio(image: Image("basta"), typeRadio: "Новый выпуск", genreRadio: "Музыкальный базар с Бастой", infoRadio: "Новое шоу."),
@@ -42,12 +58,12 @@ var modelRadioStation: [ListRadioStation] = [
 ]
 
 var modelSearch: [SearchModel] = [
-    SearchModel(image: Image("search1"), description: "Рок"),
-    SearchModel(image: Image("search2"), description: "Альтернатива"),
-    SearchModel(image: Image("search3"), description: "Поп"),
-    SearchModel(image: Image("search4"), description: "Метал"),
-    SearchModel(image: Image("search5"), description: "Рэп"),
-    SearchModel(image: Image("search6"), description: "Электро"),
-    SearchModel(image: Image("search7"), description: "Кантри"),
-    SearchModel(image: Image("search8"), description: "Диско")
+    SearchModel(image: UIImage(named: "search1"), description: "Рок"),
+    SearchModel(image: UIImage(named: "search2"), description: "Альтернатива"),
+    SearchModel(image: UIImage(named: "search3"), description: "Поп"),
+    SearchModel(image: UIImage(named: "search4"), description: "Метал"),
+    SearchModel(image: UIImage(named: "search5"), description: "Рэп"),
+    SearchModel(image: UIImage(named: "search6"), description: "Электро"),
+    SearchModel(image: UIImage(named: "search7"), description: "Кантри"),
+    SearchModel(image: UIImage(named: "search8"), description: "Диско")
 ]
